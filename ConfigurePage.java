@@ -25,11 +25,13 @@ public class ConfigurePage {
 		String actualTitle = driver.getTitle();
 		
 		// Verifying the actual title with expected title
-		if (expectedTitle.equals(actualTitle)) {
+		if (expectedTitle.equals(actualTitle)) 
+		{
 			System.out.println("** PASS - verification successful - The correct Title is Displayed on the Webpage **");
-			} else {
+		} else 
+		{
 			System.out.println("** FAIL - verification unsuccessful **");
-			}
+		}
 
 		driver.findElement(By.id("login-email")).sendKeys("kavyabhagirath26@gmail.com");
 		driver.findElement(By.name("password")).sendKeys("kavya@1994");
